@@ -10,7 +10,6 @@ const thoughtController = {
                 res.status(500).json(err);
             })
     },
-
     // get single thought by its id
     getThoughtById({ params }, res) {
         Thought.findOne({ _id: params.id })
