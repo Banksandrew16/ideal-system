@@ -31,7 +31,6 @@ const userController = {
                 res.status(500).json(err);
             });
     },
-
     // create user
     createUser({ body }, res) {
         User.create(body)
