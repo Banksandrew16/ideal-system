@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/api', apiRoutes);
 
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/social-back', {
+mongoose.connect(process.env.MONGODB_URI || ', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });
